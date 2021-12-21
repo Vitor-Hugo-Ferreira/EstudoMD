@@ -23,3 +23,28 @@ O GitHub é considerado é uma ferramenta essencial para engenheiros de software
 Em suma, o GitHub é um serviço baseado em nuvem que hospeda um sistema de controle de versão (VCS) chamado Git. Ele permite que os desenvolvedores colaborem e façam mudanças em projetos compartilhados enquanto mantêm um registro detalhado do seu progresso.
 
 Para melhor entender o que é o GitHub e como ele funciona, precisamos dar uma olhada mais a fundo.
+
+## Processo de comunicação entre repositório local e remoto
+
+<img scr="https://edrodrigues.com.br/wp-content/uploads/2020/08/conceitos-git-e-fluxo-de-trabalho-para-iniciantes-2.png">
+
+* git init: Cria um repositório Git vazio ou reinicializa um existente
+* git add: Adiciona o conteúdo do arquivo ao índice
+* git status: Mostra o status da árvore de trabalho
+* git commit: Grava alterações no repositório
+* git branch: Listar, criar ou excluir branches
+* git remote: Gerenciar conjunto de repositórios rastreados
+* git push: Atualizar referências remotas junto com objetos associados
+
+## Processo prático
+
+1. Acessar o repositório local e executar o git bash (terminal git) dentro deste diretório
+2. No git bash executar o camndo git init
+3. Executar o comando git add .
+4. Executar o comando git commit -m "first commit"
+5. Após a criação do repositório remoto no GitHub, executar o comando: git branch -M main
+6. Executar o comando git remote add origin "url do repositório remoto"
+7. Executar o comando git push -u origin main
+
+**OBS: Para a realização dos procedimentos anteriores , é necessário a autenticação do usuário do GitHub no terminal Git (user.name, user.email, token)**
+
